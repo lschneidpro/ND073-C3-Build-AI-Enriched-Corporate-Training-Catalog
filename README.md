@@ -1,55 +1,36 @@
-# README Template
+# Dental Office Virtual Assistant
 
-Below is a template provided for use when building your README file for students.
+This project aims to create a customer support chatbot that lives on a dentist website. The bot uses Azure QnA Maker and LUIS to answer patient questions and help them schedule appointments.
 
-# Project Title
+A diagram of the application architecture is below:
 
-Project description goes here.
+<img src="https://github.com/lschneidpro/nd073-c2-Dental-Office-Virtual-Assistant/blob/master/images/architecture.png?raw=true" alt="architecture" width="800"/>
+
 
 ## Getting Started
 
-Instructions for how to get a copy of the project running on your local machine.
 
-### Dependencies
+### Link
 
-```
-Examples here
-```
+[Contoso Dentistry WebApp](https://agreeable-moss-0264dad03.1.azurestaticapps.net/)
 
-### Installation
+### Website Screenshot:
 
-Step by step explanation of how to get a dev environment running.
-
-List out the steps
-
-```
-Give an example here
-```
+<img src="https://github.com/lschneidpro/nd073-c2-Dental-Office-Virtual-Assistant/blob/master/images/website.jpg?raw=true" alt="architecture" width="800"/>
 
 ## Testing
 
-Explain the steps needed to run any automated tests
+### Bot Framework Emulator Test
+<img src="https://github.com/lschneidpro/nd073-c2-Dental-Office-Virtual-Assistant/blob/master/images/emulator_bot_test.jpg?raw=true" alt="architecture" width="800"/>
 
-### Break Down Tests
+### Bot Portal Test
+<img src="https://github.com/lschneidpro/nd073-c2-Dental-Office-Virtual-Assistant/blob/master/images/portal_bot_test.jpg?raw=true" alt="architecture" width="800"/>
 
-Explain what each test does and why
-
-```
-Examples here
-```
-
-## Project Instructions
-
-This section should contain all the student deliverables for this project.
+### Website Test
+<img src="https://github.com/lschneidpro/nd073-c2-Dental-Office-Virtual-Assistant/blob/master/images/website_bot_test.jpg?raw=true" alt="architecture" width="800"/>
 
 ## Built With
 
-* [Item1](www.item1.com) - Description of item
-* [Item2](www.item2.com) - Description of item
-* [Item3](www.item3.com) - Description of item
-
-Include all items used to build project.
-
-## License
-
-[License](LICENSE.txt)
+* [Azure QnA Maker](https://www.qnamaker.ai)
+* [Azure LUIS](https://www.luis.ai/)
+* [Azure Bot Service](https://azure.microsoft.com/en-us/services/bot-services/)
