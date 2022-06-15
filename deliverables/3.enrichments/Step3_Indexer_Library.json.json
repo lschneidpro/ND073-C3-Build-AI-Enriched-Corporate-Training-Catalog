@@ -1,0 +1,74 @@
+{
+    "@odata.context": "https://kbm-searchservice.search.windows.net/$metadata#indexers/$entity",
+    "@odata.etag": "\"0x8DA4ED747536F75\"",
+    "name": "papers-indexer",
+    "description": "",
+    "dataSourceName": "papers-data",
+    "skillsetName": "papers-skillset",
+    "targetIndexName": "papers-index",
+    "disabled": null,
+    "schedule": null,
+    "parameters": {
+      "batchSize": null,
+      "maxFailedItems": 0,
+      "maxFailedItemsPerBatch": 0,
+      "base64EncodeKeys": null,
+      "configuration": {
+        "dataToExtract": "contentAndMetadata",
+        "parsingMode": "default"
+      }
+    },
+    "fieldMappings": [
+      {
+        "sourceFieldName": "metadata_storage_path",
+        "targetFieldName": "metadata_storage_path",
+        "mappingFunction": {
+          "name": "base64Encode"
+        }
+      }
+    ],
+    "outputFieldMappings": [
+      {
+        "sourceFieldName": "/document/content/people",
+        "targetFieldName": "people"
+      },
+      {
+        "sourceFieldName": "/document/content/organizations",
+        "targetFieldName": "organizations"
+      },
+      {
+        "sourceFieldName": "/document/content/locations",
+        "targetFieldName": "locations"
+      },
+      {
+        "sourceFieldName": "/document/content/keyphrases",
+        "targetFieldName": "keyphrases"
+      },
+      {
+        "sourceFieldName": "/document/content/pii_entities",
+        "targetFieldName": "pii_entities"
+      },
+      {
+        "sourceFieldName": "/document/content/masked_text",
+        "targetFieldName": "masked_text"
+      },
+      {
+        "sourceFieldName": "/document/publicationName",
+        "targetFieldName": "publicationName"
+      },
+      {
+        "sourceFieldName": "/document/publisher",
+        "targetFieldName": "publisher"
+      },
+      {
+        "sourceFieldName": "/document/doi",
+        "targetFieldName": "doi"
+      },
+      {
+        "sourceFieldName": "/document/publicationDate",
+        "targetFieldName": "publicationDate"
+      }
+    ],
+    "cache": null,
+    "encryptionKey": null
+  }
