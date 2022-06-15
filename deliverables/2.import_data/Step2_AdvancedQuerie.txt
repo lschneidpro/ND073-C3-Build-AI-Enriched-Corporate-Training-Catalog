@@ -1,0 +1,132 @@
+#Query String
+*&$filter=instructor ne ''&$top=5
+
+#Request URL
+https://udacitysearch-searchservice.search.windows.net/indexes/courses-index/docs?api-version=2021-04-30-Preview&search=*&%24filter=instructor%20ne%20''&%24top=5
+
+#Results
+{
+  "@odata.context": "https://udacitysearch-searchservice.search.windows.net/indexes('courses-index')/$metadata#docs(*)",
+  "value": [
+    {
+      "@search.score": 1,
+      "PartitionKey": "company-moodle",
+      "RowKey": "17b1eedc-0e96-4e5b-8199-83a484388efe",
+      "Key": "company-moodle17b1eedc-0e96-4e5b-8199-83a484388efe",
+      "description": "Learn our internal best practices for using the O365 suite including email signatures, file storage and other issues",
+      "duration": 2,
+      "instructor": "Gerald Dominguez",
+      "instructor_description": null,
+      "level": "beginner",
+      "product": "O365",
+      "rating_average": 4.6,
+      "rating_count": 510,
+      "role": "all",
+      "source": "Company Moodle",
+      "title": "O365",
+      "url": "https://www.example.com/course10",
+      "instructor_entities": [
+        {
+          "name": "Gerald Dominguez",
+          "description": "Gerald is a Junior IT Administrator and has been with the company for 1 year. Gerald played NCAA soccer and is a part-time soccer coach on weekends. "
+        }
+      ]
+    },
+    {
+      "@search.score": 1,
+      "PartitionKey": "company-moodle",
+      "RowKey": "278d299e-ef0e-47fb-8e98-5a31a073519c",
+      "Key": "company-moodle278d299e-ef0e-47fb-8e98-5a31a073519c",
+      "description": "For developers, learn our best practices for securely connecting to databases",
+      "duration": 2,
+      "instructor": "Eileen Diaz",
+      "instructor_description": null,
+      "level": "advanced",
+      "product": "SQL",
+      "rating_average": 4.8,
+      "rating_count": 115,
+      "role": "developer",
+      "source": "Company Moodle",
+      "title": "Security for database code",
+      "url": "https://www.example.com/course7",
+      "instructor_entities": [
+        {
+          "name": "Eileen Diaz",
+          "description": "Eileen is our Senior Security Engineer responsible for application and service security. She has been with the company for 9 years and enjoys writing Sci-Fi in her spare time."
+        }
+      ]
+    },
+    {
+      "@search.score": 1,
+      "PartitionKey": "company-moodle",
+      "RowKey": "30e3c6e5-9415-4d85-8229-c2133203c535",
+      "Key": "company-moodle30e3c6e5-9415-4d85-8229-c2133203c535",
+      "description": "Learn the policies related to the distribution and use of computers, phones, software, and other technology",
+      "duration": 1,
+      "instructor": "Mike Montoya",
+      "instructor_description": null,
+      "level": "beginner",
+      "product": "NA",
+      "rating_average": 4.9,
+      "rating_count": 550,
+      "role": "all",
+      "source": "Company Moodle",
+      "title": "Onboarding - Technology Policies ",
+      "url": "https://www.example.com/course2",
+      "instructor_entities": [
+        {
+          "name": "Mike Montoya",
+          "description": "Mike  is our HR trainer responsible for helping employees be successful in their careers at our company.  He has been with us for 3 years. Mike is an amateur chef and enjoys outdoor live music events."
+        }
+      ]
+    },
+    {
+      "@search.score": 1,
+      "PartitionKey": "company-moodle",
+      "RowKey": "3cbb3800-2554-4121-bb3a-f365deb0c3b6",
+      "Key": "company-moodle3cbb3800-2554-4121-bb3a-f365deb0c3b6",
+      "description": "Learn our best practices for various tools such as Leaflet",
+      "duration": 2,
+      "instructor": "Robert Gillis",
+      "instructor_description": null,
+      "level": "intermediate",
+      "product": "leaflet",
+      "rating_average": 3.9,
+      "rating_count": 28,
+      "role": "developer",
+      "source": "Company Moodle",
+      "title": "Maps",
+      "url": "https://www.example.com/course6",
+      "instructor_entities": [
+        {
+          "name": "Robert Gillis",
+          "description": "Robert is our GIS specialist in charge of making beautiful maps for our users. He has been with the company for 8 years and enjoys hiking, fishing, and any other outdoor activity."
+        }
+      ]
+    },
+    {
+      "@search.score": 1,
+      "PartitionKey": "company-moodle",
+      "RowKey": "578a3319-aa7c-4d2f-b6a4-39e9638b0a85",
+      "Key": "company-moodle578a3319-aa7c-4d2f-b6a4-39e9638b0a85",
+      "description": "For administrators, this course will teach you how our CI/CD pipelines work from an operations perspective",
+      "duration": 5,
+      "instructor": "Claudia Blackman",
+      "instructor_description": null,
+      "level": "intermediate",
+      "product": "jenkins",
+      "rating_average": 4.9,
+      "rating_count": 56,
+      "role": "admin",
+      "source": "Company Moodle",
+      "title": "DevOps for Ops",
+      "url": "https://www.example.com/course5",
+      "instructor_entities": [
+        {
+          "name": "Claudia Blackman",
+          "description": "Claudia is our senior DevOps engineer. She is charged with overseeing our DevOps operations and has been with the company for 2 years. Claudia enjoys downhill skiing and is a member of the local Search & Rescue Team."
+        }
+      ]
+    }
+  ]
+}

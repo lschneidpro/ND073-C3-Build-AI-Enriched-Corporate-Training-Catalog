@@ -1,0 +1,36 @@
+{
+    "@odata.context": "https://kbm-searchservice.search.windows.net/$metadata#skillsets/$entity",
+    "@odata.etag": "\"0x8DA4E9EAC61AE90\"",
+    "name": "courses-skillset",
+    "description": "Skillset created from the portal. skillsetName: courses-skillset; contentField: description; enrichmentGranularity: document; knowledgeStoreStorageAccount: ;",
+    "skills": [
+      {
+        "@odata.type": "#Microsoft.Skills.Text.KeyPhraseExtractionSkill",
+        "name": "#1",
+        "description": null,
+        "context": "/document/description",
+        "defaultLanguageCode": "en",
+        "maxKeyPhraseCount": null,
+        "modelVersion": null,
+        "inputs": [
+          {
+            "name": "text",
+            "source": "/document/description"
+          }
+        ],
+        "outputs": [
+          {
+            "name": "keyPhrases",
+            "targetName": "keyphrases"
+          }
+        ]
+      }
+    ],
+    "cognitiveServices": {
+      "@odata.type": "#Microsoft.Azure.Search.CognitiveServicesByKey",
+      "description": "/subscriptions/6f937204-8bdd-4e03-ae09-d1b4867e638b/resourceGroups/udacity-kbm-rg/providers/Microsoft.CognitiveServices/accounts/kbm-cgs",
+      "key": "adbcc6fa00aa41de850902d7e910787c"
+    },
+    "knowledgeStore": null,
+    "encryptionKey": null
+  }
